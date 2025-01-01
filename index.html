@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabamTemiz.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2a2a72;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #3b3b98;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            margin-top: 20px;
+        }
+
+        .cta a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #6c5ce7;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #a29bfe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3b3b98;
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            background-color: #6c5ce7;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #a29bfe;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ArabamTemiz.com</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Araba Yıkamada Yeni Bir Dönem!</h2>
+            <p>ArabamTemiz.com ile araç yıkama randevunuzu birkaç tıkla oluşturun. Güvenilir, kolay ve pratik!</p>
+            <form>
+                <label for="pickup-location">Araç Teslim Noktası:</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Adresinizi giriniz" required>
+
+                <label for="date">Randevu Tarihi:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Randevu Saati:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Randevu Oluştur</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ArabamTemiz.com. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
